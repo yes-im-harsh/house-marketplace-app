@@ -17,7 +17,6 @@ const Contact = () => {
       const docSnap = await getDoc(docRef);
 
       if (docSnap.exists()) {
-        console.log(docSnap.data());
         setLandlord(docSnap.data());
       } else {
         toast.error("Could not get landlord data");
@@ -40,9 +39,7 @@ const Contact = () => {
       {landlord !== null && (
         <main>
           <div className="contactLandlord">
-            <p className="landlordName">
-              Contact {console.log(landlord.name)} {landlord?.name}
-            </p>
+            <p className="landlordName">Contact {landlord?.name}</p>
           </div>
 
           <form className="messageForm">

@@ -91,7 +91,6 @@ const CreateListing = () => {
     }
 
     let geolocation = {};
-    let location;
 
     if (geolocationEnabled) {
       // Call the api from here, when enabled :(
