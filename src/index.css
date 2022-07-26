@@ -289,11 +289,12 @@ button {
 }
 
 .registerLink {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   color: #00cc66;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 7rem;
+  /* margin-bottom: 7rem; */
+  margin: 8em auto;
 }
 
 @media (min-width: 1217px) {
@@ -818,4 +819,19 @@ button {
   margin-left: 1rem;
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+.primaryButtonContact {
+  cursor: pointer;
+  background: #00cc66;
+  border-radius: 1rem;
+  padding: 0.85rem 2rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 80%;
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

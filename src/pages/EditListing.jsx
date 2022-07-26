@@ -14,6 +14,7 @@ import { toast } from "react-toastify";
 import { v4 as uuidv4 } from "uuid";
 
 const EditListing = () => {
+  // eslint-disable-next-line
   const [geolocationEnabled, setGeolocationEnabled] = useState(false);
   const [listing, setListing] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -224,6 +225,10 @@ const EditListing = () => {
       }));
     }
   };
+
+  if (loading) {
+    return <Spinner />;
+  }
 
   return (
     <div className="profile">
